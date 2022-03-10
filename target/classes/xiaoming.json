@@ -1,6 +1,6 @@
 {
   "name": "XiaoMingCMI",
-  "version": "0.0.2-SNAPSHOT",
+  "version": "1.0.1-SNAPSHOT",
   "author": "XIAO_CHUAN",
-  "main": "io.Github.XiaoChuanIT.XiaoMingCMI.XiaoMingCMIPlugin"
+  "main": "io.Github.XiaoChuanIT.XiaoMingToolBoxX.XiaoMingToolBoxXPlugin"
 }
