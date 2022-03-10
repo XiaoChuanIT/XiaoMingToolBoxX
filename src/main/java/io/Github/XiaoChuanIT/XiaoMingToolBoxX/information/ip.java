@@ -1,4 +1,4 @@
-package io.Github.XiaoChuanIT.XiaoMingToolBoxX.function;
+package io.Github.XiaoChuanIT.XiaoMingToolBoxX.information;
 
 import cn.chuanwise.xiaoming.annotation.EventListener;
 import cn.chuanwise.xiaoming.event.Listeners;

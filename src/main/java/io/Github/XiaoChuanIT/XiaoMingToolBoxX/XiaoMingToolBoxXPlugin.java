@@ -3,6 +3,9 @@ package io.Github.XiaoChuanIT.XiaoMingToolBoxX;
 import cn.chuanwise.xiaoming.plugin.JavaPlugin;
 import io.Github.XiaoChuanIT.XiaoMingToolBoxX.config.IpConfig;
 import io.Github.XiaoChuanIT.XiaoMingToolBoxX.function.*;
+import io.Github.XiaoChuanIT.XiaoMingToolBoxX.information.ip;
+import io.Github.XiaoChuanIT.XiaoMingToolBoxX.information.ping;
+import io.Github.XiaoChuanIT.XiaoMingToolBoxX.information.xmping;
 
 import java.io.File;
 import java.util.Arrays;
@@ -28,6 +31,7 @@ public class XiaoMingToolBoxXPlugin
         getXiaoMingBot().getInteractorManager().registerInteractors(new Refresh(), this);
         getXiaoMingBot().getInteractorManager().registerInteractors(new ping(), this);
         getXiaoMingBot().getInteractorManager().registerInteractors(new PlugHelp(), this);
+        getXiaoMingBot().getInteractorManager().registerInteractors(new xmping(), this);
     }
 
     protected IpConfig XiaoMingToolBoxXIpConfig;   //配置文件方法

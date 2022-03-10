@@ -1,4 +1,4 @@
-package io.Github.XiaoChuanIT.XiaoMingToolBoxX.function;
+package io.Github.XiaoChuanIT.XiaoMingToolBoxX.information;
 
 import io.Github.XiaoChuanIT.XiaoMingToolBoxX.XiaoMingToolBoxXPlugin;
 import cn.chuanwise.xiaoming.annotation.Filter;
@@ -160,45 +160,13 @@ import java.util.Properties;
 //            user.sendMessage("----------------------------------");
 
 
-public class ping<T extends Plugin> extends XiaoMingToolBoxXPlugin implements Interactors<T>, Listeners<T> {
+public class xmping<T extends Plugin> extends XiaoMingToolBoxXPlugin implements Interactors<T>, Listeners<T> {
     @Filter("ping")
     @Required("core.account.user.administrator.grant")
-    public void XiaoMingChineseCall(XiaoMingUser user) {
+    public void xmping(XiaoMingUser user) {
         //以下全是获取信息发送信息
         user.sendMessage("系统情况如下：\n");
         Properties props = System.getProperties();
-//        user.sendMessage("Java的运行环境版本：" + props.getProperty("java.version"));
-//        user.sendMessage("Java的运行环境供应商：" + props.getProperty("java.vendor"));
-//        user.sendMessage("Java供应商的URL：" + props.getProperty("java.vendor.url"));
-//        user.sendMessage("Java的安装路径：" + props.getProperty("java.home"));
-//        user.sendMessage("Java的虚拟机规范版本：" + props.getProperty("java.vm.specification.version"));
-//        user.sendMessage("Java的虚拟机规范供应商：" + props.getProperty("java.vm.specification.vendor"));
-//        user.sendMessage("Java的虚拟机规范名称：" + props.getProperty("java.vm.specification.name"));
-//        user.sendMessage("Java的虚拟机实现版本：" + props.getProperty("java.vm.version"));
-//        user.sendMessage("Java的虚拟机实现供应商：" + props.getProperty("java.vm.vendor"));
-//        user.sendMessage("Java的虚拟机实现名称：" + props.getProperty("java.vm.name"));
-//        user.sendMessage("Java运行时环境规范版本：" + props.getProperty("java.specification.version"));
-//        user.sendMessage("Java运行时环境规范供应商：" + props.getProperty("java.specification.vender"));
-//        user.sendMessage("Java运行时环境规范名称：" + props.getProperty("java.specification.name"));
-//        user.sendMessage("Java的类格式版本号：" + props.getProperty("java.class.version"));
-//        user.sendMessage("Java的类路径：" + props.getProperty("java.class.path"));
-//        user.sendMessage("加载库时搜索的路径列表：" + props.getProperty("java.library.path"));
-//        user.sendMessage("默认的临时文件路径：" + props.getProperty("java.io.tmpdir"));
-//        user.sendMessage("一个或多个扩展目录的路径：" + props.getProperty("java.ext.dirs"));
-//        user.sendMessage("操作系统的名称：" + props.getProperty("os.name"));
-//        user.sendMessage("操作系统的构架：" + props.getProperty("os.arch"));
-//        user.sendMessage("操作系统的版本：" + props.getProperty("os.version"));
-//        user.sendMessage("文件分隔符：" + props.getProperty("file.separator"));
-//        //在 unix 系统中是＂／＂
-//        user.sendMessage("路径分隔符：" + props.getProperty("path.separator"));
-//        //在 unix 系统中是＂:＂
-//        user.sendMessage("行分隔符：" + props.getProperty("line.separator"));
-        //在 unix 系统中是＂/n＂
-        user.sendMessage("用户的账户名称：" + props.getProperty("user.name"));
-        user.sendMessage("用户的主目录：" + props.getProperty("user.home"));
-        user.sendMessage("用户的当前工作目录：" + props.getProperty("user.dir"));
-        user.sendMessage("操作系统的名称：" + props.getProperty("os.name"));
-        user.sendMessage("操作系统的版本：" + props.getProperty("os.version"));
         user.sendMessage("小明版本：" + XiaoMingBot.VERSION);
         //以下全是获取信息发送信息 End
     }
