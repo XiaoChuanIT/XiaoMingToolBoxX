@@ -1,4 +1,6 @@
 Disclaimer: the following treaties are mandatory, and violators will be severely punished
+XiaoMingToolBox must be added before the name of the plug-in using XiaoMingToolBoxX code
+
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
